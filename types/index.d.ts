@@ -9,7 +9,7 @@ interface Window {
     imagePicker: ImagePicker;
 }
 
-const enum OutputType {
+declare enum OutputType {
     FILE_URI = 0,
     BASE64_STRING = 1,
 }
@@ -26,7 +26,6 @@ interface ImagePicker {
         onSuccess: (images: string[]) => void,
         onError: (message: string) => void,
         options?: ImagePickerOptions): void;
-    }
 }
 
 interface ImagePickerOptions {
