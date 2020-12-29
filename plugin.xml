@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
   xmlns:android="http://schemas.android.com/apk/res/android"
-  id="cordova-plugin-telerik-imagepicker"
+  id="elastos-trinity-plugins-imagepicker"
   version="2.3.5">
 
     <name>ImagePicker</name>
@@ -38,7 +38,7 @@
 
         <header-file src="src/ios/GMImagePicker/FeHourGlass.h" />
         <source-file src="src/ios/GMImagePicker/FeHourGlass.m" />
-      
+
         <header-file src="src/ios/GMImagePicker/UIImage+fixOrientation.h" />
         <source-file src="src/ios/GMImagePicker/UIImage+fixOrientation.m" />
 
@@ -100,9 +100,10 @@
                 <param name="android-package" value="com.synconset.ImagePicker"/>
             </feature>
         </config-file>
-        <edit-config file="app/src/main/AndroidManifest.xml" mode="merge" target="/manifest/application">
+        <!-- Runtime has added this config -->
+        <!-- <edit-config file="app/src/main/AndroidManifest.xml" mode="merge" target="/manifest/application">
             <application android:requestLegacyExternalStorage="true" />
-        </edit-config>
+        </edit-config> -->
         <config-file target="AndroidManifest.xml" parent="/manifest/application">
             <activity android:label="@string/multi_app_name" android:name="com.synconset.MultiImageChooserActivity" android:theme="@style/Theme.AppCompat.Light">
             </activity>
